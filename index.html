@@ -22,29 +22,36 @@
       margin: auto;
     }
 
+    .imagem-topo {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      display: block;
+      margin: 0 auto 20px auto;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #cccccc80;
+    }
+
     .titulo {
       font-size: 2.5rem;
       font-weight: bold;
       color: #ccc;
       margin-bottom: 10px;
-    }
-
-    .pulsando {
       animation: pulse 2s infinite;
     }
 
     @keyframes pulse {
       0% {
         transform: scale(1);
-        text-shadow: 0 0 5px #ccc;
+        text-shadow: 0 0 0px #fff;
       }
       50% {
-        transform: scale(1.08);
-        text-shadow: 0 0 20px #fff;
+        transform: scale(1.05);
+        text-shadow: 0 0 12px #ccc;
       }
       100% {
         transform: scale(1);
-        text-shadow: 0 0 5px #ccc;
+        text-shadow: 0 0 0px #fff;
       }
     }
 
@@ -96,29 +103,30 @@
 </head>
 <body>
   <div class="container">
-    <div class="titulo fade-in pulsando" style="animation-delay: 0.4s;">Pv Vieira</div>
+    <img src="imagens/foto-topo.jpg" alt="Paulo Victor" class="imagem-topo fade-in" style="animation-delay: 0.2s;" />
+    <div class="titulo fade-in" style="animation-delay: 0.4s;">Paulo Victor</div>
     <div class="subtitulo fade-in" style="animation-delay: 0.6s;">
       Vivendo do mercado de OB<br>
       +7 dígitos no Digital<br>
-      Alguns links que podem te ajudar
+      Operando há mais de 4 anos nesse mercado.
     </div>
 
-    <!-- Botões com delays sequenciais -->
     <a href="https://trade.obynexbroker.com/register?aff=757282&aff_model=revenue&afftrack=" class="botao-imagem" style="animation-delay: 0.8s;" target="_blank">
       <img src="imagens/botao-corretora.png" alt="Corretora" />
     </a>
 
-    <a href="https://wa.me/5522998931523?text=Quero%20saber%20mais%20sobre%20o%20seu%20trabalho!" class="botao-imagem" style="animation-delay: 1s;" target="_blank">
-      <img src="imagens/botao-whatsapp.png" alt="WhatsApp" />
-    </a>
+   <a href="https://wa.me/5522998931523?text=Quero%20saber%20mais%20sobre%20o%20seu%20trabalho!" class="botao-imagem" style="animation-delay: 1s;" target="_blank">
+  <img src="imagens/botao-whatsapp.png" alt="WhatsApp" />
+</a>
+
 
     <a href="https://bottrader-alvox.github.io/bot-trader/" class="botao-imagem" style="animation-delay: 1.2s;" target="_blank">
       <img src="imagens/botao-ferramenta.png" alt="Ferramenta Bot Trader" />
     </a>
-
-    <footer>
-      © 2025 Paulo Victor. Todos os direitos reservados.
-    </footer>
   </div>
+
+  <footer>
+    © 2025 Paulo Victor. Todos os direitos reservados.
+  </footer>
 </body>
 </html>
