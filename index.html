@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Paulo Victor | Link da Bio</title>
   <meta name="description" content="Paulo Victor - Trader profissional de opções binárias. Acesse todos os meus links aqui.">
-  <meta property="og:image" content="imagens/foto-topo.jpg">
   <meta property="og:title" content="Paulo Victor | Trader Profissional">
   <style>
     body {
@@ -27,6 +26,25 @@
       font-weight: bold;
       color: #ccc;
       margin-bottom: 10px;
+    }
+
+    .pulsando {
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        text-shadow: 0 0 5px #ccc;
+      }
+      50% {
+        transform: scale(1.08);
+        text-shadow: 0 0 20px #fff;
+      }
+      100% {
+        transform: scale(1);
+        text-shadow: 0 0 5px #ccc;
+      }
     }
 
     .subtitulo {
@@ -77,7 +95,7 @@
 </head>
 <body>
   <div class="container">
-    <div class="titulo fade-in" style="animation-delay: 0.4s;">Pv Vieira</div>
+    <div class="titulo fade-in pulsando" style="animation-delay: 0.4s;">Pv Vieira</div>
     <div class="subtitulo fade-in" style="animation-delay: 0.6s;">
       Vivendo do mercado de OB<br>
       +7 dígitos no Digital<br>
@@ -96,10 +114,10 @@
     <a href="https://bottrader-alvox.github.io/bot-trader/" class="botao-imagem" style="animation-delay: 1.2s;" target="_blank">
       <img src="imagens/botao-ferramenta.png" alt="Ferramenta Bot Trader" />
     </a>
-  </div>
 
-  <footer>
-    © 2025 Paulo Victor. Todos os direitos reservados.
-  </footer>
+    <footer>
+      © 2025 Paulo Victor. Todos os direitos reservados.
+    </footer>
+  </div>
 </body>
 </html>
