@@ -2,25 +2,48 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Quests Tibia - Soul War & Brakagore</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
   <style>
-    body {
+    body, html {
       margin: 0;
+      padding: 0;
       font-family: 'Orbitron', sans-serif;
-      background: #0d0d0d;
-      color: #f2f2f2;
+      overflow-x: hidden;
+      color: #fff;
+      background-color: #000;
+    }
+
+    video#bgvideo {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
     }
 
     header {
-      background: linear-gradient(90deg, #400000, #1a1a1a);
-      padding: 40px 20px;
       text-align: center;
+      padding: 80px 20px 40px;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    header img {
+      width: 100px;
+      animation: spin 8s linear infinite;
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
     }
 
     header h1 {
       font-size: 3rem;
       color: #ff3333;
+      margin: 20px 0 10px;
       text-shadow: 2px 2px #000;
     }
 
@@ -30,57 +53,20 @@
     }
 
     .orcamento-btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 15px 30px;
       background: #ff0000;
       color: white;
+      padding: 15px 30px;
       border: none;
       border-radius: 10px;
-      text-decoration: none;
       font-weight: bold;
+      margin-top: 20px;
+      text-decoration: none;
+      display: inline-block;
       transition: 0.3s;
     }
 
     .orcamento-btn:hover {
       background: #cc0000;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .sessao {
-      margin-bottom: 60px;
-    }
-
-    .sessao h2 {
-      font-size: 2rem;
-      color: #ff6666;
-      margin-bottom: 20px;
-      border-left: 5px solid red;
-      padding-left: 15px;
-    }
-
-    .sessao p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-
-    .prints {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
-
-    .prints img {
-      width: 300px;
-      border-radius: 10px;
-      border: 2px solid #ff0000;
-      box-shadow: 0 0 10px #ff000055;
     }
 
     .whatsapp-float {
@@ -103,18 +89,59 @@
       gap: 8px;
     }
 
-    .whatsapp-float a:hover {
-      background-color: #1ebe5a;
+    section {
+      padding: 60px 20px;
+      background: rgba(0, 0, 0, 0.7);
+      max-width: 1200px;
+      margin: auto;
+      margin-top: 30px;
+      border-radius: 12px;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      color: #ff6666;
+      margin-bottom: 20px;
+      border-left: 5px solid red;
+      padding-left: 15px;
+    }
+
+    section p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .prints {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .prints img {
+      width: 280px;
+      border-radius: 12px;
+      border: 2px solid #ff0000;
+      box-shadow: 0 0 12px #ff000055;
+    }
+
+    .contador {
+      font-size: 1.5rem;
+      margin-top: 20px;
+      background: #111;
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 10px;
+      color: #0f0;
+      font-weight: bold;
     }
 
     footer {
-      background: #111;
       text-align: center;
       padding: 30px;
-      color: #666;
+      color: #777;
+      background: #000;
     }
-
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 
     @media (max-width: 600px) {
       header h1 {
@@ -129,45 +156,73 @@
 </head>
 <body>
 
+  <!-- Vídeo de fundo -->
+  <video autoplay muted loop id="bgvideo">
+    <source src="https://cdn.pixabay.com/video/2022/07/13/125235-734480210_tiny.mp4" type="video/mp4">
+  </video>
+
   <!-- Botão flutuante WhatsApp -->
   <div class="whatsapp-float">
-    <a href="https://wa.me/seunumero" target="_blank">
-      💬 WhatsApp
-    </a>
+    <a href="https://wa.me/5599999999999" target="_blank">💬 WhatsApp</a>
   </div>
 
   <!-- Cabeçalho -->
   <header>
-    <h1>Soul War e Brakagore Quests</h1>
-    <p>Serviços Profissionais - Feito com Segurança e Experiência</p>
-    <a class="orcamento-btn" href="https://wa.me/seunumero" target="_blank">FAÇA SEU ORÇAMENTO AQUI</a>
+    <img src="https://cdn-icons-png.flaticon.com/512/262/262092.png" alt="Espada">
+    <h1>Soul War & Brakagore Quests</h1>
+    <p>Feitas com segurança por profissionais do Tibia</p>
+    <a class="orcamento-btn" href="https://wa.me/5599999999999" target="_blank">FAÇA SEU ORÇAMENTO AQUI</a>
+    <div class="contador" id="contador"></div>
   </header>
 
-  <!-- Seções -->
-  <section class="sessao">
-    <h2>🔥 Soul War - Domine essa Quest!</h2>
-    <p>Executamos a quest Soul War completa, com segurança e rapidez. Ideal para jogadores que desejam acessar os conteúdos mais avançados do jogo sem riscos.</p>
+  <!-- Conteúdo -->
+  <section>
+    <h2>🔥 Soul War</h2>
+    <p>Chegue nas áreas mais difíceis do Tibia com tranquilidade. Fazemos a Soul War com todo o suporte necessário, loot garantido e segurança total.</p>
   </section>
 
-  <section class="sessao">
-    <h2>⚔️ Brakagore - Derrote esse Desafio</h2>
-    <p>Equipe treinada para lidar com as mecânicas difíceis da quest de Brakagore. Garantimos seu acesso ao boss e ao loot, com agendamento e suporte via WhatsApp.</p>
+  <section>
+    <h2>⚔️ Brakagore</h2>
+    <p>Uma das quests mais desafiadoras do jogo. Nossa equipe experiente faz a mecânica completa com suporte em tempo real pelo WhatsApp.</p>
   </section>
 
-  <!-- Prints do WhatsApp -->
-  <section class="sessao">
-    <h2>📱 Clientes Satisfeitos</h2>
+  <section>
+    <h2>📱 Clientes Reais</h2>
     <div class="prints">
-      <img src="print1.jpg" alt="Print WhatsApp 1">
-      <img src="print2.jpg" alt="Print WhatsApp 2">
-      <img src="print3.jpg" alt="Print WhatsApp 3">
+      <img src="print1.jpg" alt="Print 1">
+      <img src="print2.jpg" alt="Print 2">
+      <img src="print3.jpg" alt="Print 3">
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Rodapé -->
   <footer>
     © 2025 - Serviço de Quests Tibia | Desenvolvido por você
   </footer>
+
+  <!-- Script: Contador Regressivo -->
+  <script>
+    function atualizaContador() {
+      const destino = new Date();
+      destino.setMinutes(destino.getMinutes() + 10);
+      const atualizar = setInterval(() => {
+        const agora = new Date().getTime();
+        const tempoRestante = destino - agora;
+
+        const minutos = Math.floor((tempoRestante % (1000 * 60 * 60)) / (1000 * 60));
+        const segundos = Math.floor((tempoRestante % (1000 * 60)) / 1000);
+
+        document.getElementById("contador").innerText =
+          `Oferta por tempo limitado: ${minutos}m ${segundos}s restantes`;
+
+        if (tempoRestante < 0) {
+          clearInterval(atualizar);
+          document.getElementById("contador").innerText = "A oferta expirou! Fale no WhatsApp para novas condições.";
+        }
+      }, 1000);
+    }
+    atualizaContador();
+  </script>
 
 </body>
 </html>
