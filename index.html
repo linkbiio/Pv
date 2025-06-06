@@ -1,132 +1,173 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Paulo Victor | Link da Bio</title>
-  <meta name="description" content="Paulo Victor - Trader profissional de opções binárias. Acesse todos os meus links aqui.">
-  <meta property="og:image" content="imagens/foto-topo.jpg">
-  <meta property="og:title" content="Paulo Victor | Trader Profissional">
+  <title>Quests Tibia - Soul War & Brakagore</title>
   <style>
     body {
       margin: 0;
-      padding: 30px 20px;
-      font-family: Arial, sans-serif;
-      background: #000;
-      color: #fff;
+      font-family: 'Orbitron', sans-serif;
+      background: #0d0d0d;
+      color: #f2f2f2;
+    }
+
+    header {
+      background: linear-gradient(90deg, #400000, #1a1a1a);
+      padding: 40px 20px;
       text-align: center;
     }
 
-    .container {
-      max-width: 520px;
+    header h1 {
+      font-size: 3rem;
+      color: #ff3333;
+      text-shadow: 2px 2px #000;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .orcamento-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 30px;
+      background: #ff0000;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .orcamento-btn:hover {
+      background: #cc0000;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1200px;
       margin: auto;
     }
 
-    .imagem-topo {
-      width: 100%;
-      max-width: 500px;
-      height: auto;
-      display: block;
-      margin: 0 auto 20px auto;
-      border-radius: 12px;
-      box-shadow: 0 0 15px #cccccc80;
+    .sessao {
+      margin-bottom: 60px;
     }
 
-    .titulo {
-      font-size: 2.5rem;
+    .sessao h2 {
+      font-size: 2rem;
+      color: #ff6666;
+      margin-bottom: 20px;
+      border-left: 5px solid red;
+      padding-left: 15px;
+    }
+
+    .sessao p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .prints {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .prints img {
+      width: 300px;
+      border-radius: 10px;
+      border: 2px solid #ff0000;
+      box-shadow: 0 0 10px #ff000055;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+
+    .whatsapp-float a {
+      background-color: #25D366;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 50px;
+      text-decoration: none;
       font-weight: bold;
-      color: #ccc;
-      margin-bottom: 10px;
-      animation: pulse 2s infinite;
+      box-shadow: 0 0 10px #25D366;
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
 
-    @keyframes pulse {
-      0% {
-        transform: scale(1);
-        text-shadow: 0 0 0px #fff;
-      }
-      50% {
-        transform: scale(1.05);
-        text-shadow: 0 0 12px #ccc;
-      }
-      100% {
-        transform: scale(1);
-        text-shadow: 0 0 0px #fff;
-      }
-    }
-
-    .subtitulo {
-      font-size: 1.2rem;
-      color: #aaa;
-      margin-bottom: 40px;
-      line-height: 1.5;
-    }
-
-    .botao-imagem {
-      display: block;
-      width: 100%;
-      margin: 18px 0;
-      border-radius: 22px;
-      overflow: hidden;
-      border: 2px solid #ccc;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      box-shadow: 0 0 10px #cccccc80;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeIn 0.8s ease-out forwards;
-    }
-
-    .botao-imagem:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 25px #ccccccaa;
-    }
-
-    .botao-imagem img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    .whatsapp-float a:hover {
+      background-color: #1ebe5a;
     }
 
     footer {
-      margin-top: 50px;
-      font-size: 0.85rem;
-      color: #777;
+      background: #111;
+      text-align: center;
+      padding: 30px;
+      color: #666;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .prints img {
+        width: 90%;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="imagens/foto-topo.jpg" alt="Paulo Victor" class="imagem-topo fade-in" style="animation-delay: 0.2s;" />
-    <div class="titulo fade-in" style="animation-delay: 0.4s;">Pv Trader</div>
-    <div class="subtitulo fade-in" style="animation-delay: 0.6s;">
-      Vivendo do mercado de OB<br>
-      +7 dígitos no Digital<br>
-      Operando há mais de 4 anos nesse mercado.
-    </div>
 
-    <a href="https://trade.obynexbroker.com/register?aff=757282&aff_model=revenue&afftrack=" class="botao-imagem" style="animation-delay: 0.8s;" target="_blank">
-      <img src="imagens/botao-corretora.png" alt="Corretora" />
-    </a>
-
-   <a href="https://wa.me/5522998931523?text=Quero%20saber%20mais%20sobre%20o%20seu%20trabalho!" class="botao-imagem" style="animation-delay: 1s;" target="_blank">
-  <img src="imagens/botao-whatsapp.png" alt="WhatsApp" />
-</a>
-
-
-    <a href="https://bottrader-alvox.github.io/bot-trader/" class="botao-imagem" style="animation-delay: 1.2s;" target="_blank">
-      <img src="imagens/botao-ferramenta.png" alt="Ferramenta Bot Trader" />
+  <!-- Botão flutuante WhatsApp -->
+  <div class="whatsapp-float">
+    <a href="https://wa.me/seunumero" target="_blank">
+      💬 WhatsApp
     </a>
   </div>
 
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Soul War e Brakagore Quests</h1>
+    <p>Serviços Profissionais - Feito com Segurança e Experiência</p>
+    <a class="orcamento-btn" href="https://wa.me/seunumero" target="_blank">FAÇA SEU ORÇAMENTO AQUI</a>
+  </header>
+
+  <!-- Seções -->
+  <section class="sessao">
+    <h2>🔥 Soul War - Domine essa Quest!</h2>
+    <p>Executamos a quest Soul War completa, com segurança e rapidez. Ideal para jogadores que desejam acessar os conteúdos mais avançados do jogo sem riscos.</p>
+  </section>
+
+  <section class="sessao">
+    <h2>⚔️ Brakagore - Derrote esse Desafio</h2>
+    <p>Equipe treinada para lidar com as mecânicas difíceis da quest de Brakagore. Garantimos seu acesso ao boss e ao loot, com agendamento e suporte via WhatsApp.</p>
+  </section>
+
+  <!-- Prints do WhatsApp -->
+  <section class="sessao">
+    <h2>📱 Clientes Satisfeitos</h2>
+    <div class="prints">
+      <img src="print1.jpg" alt="Print WhatsApp 1">
+      <img src="print2.jpg" alt="Print WhatsApp 2">
+      <img src="print3.jpg" alt="Print WhatsApp 3">
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    © 2025 Paulo Victor. Todos os direitos reservados.
+    © 2025 - Serviço de Quests Tibia | Desenvolvido por você
   </footer>
+
 </body>
 </html>
